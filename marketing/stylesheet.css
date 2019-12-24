@@ -1,0 +1,61 @@
+html {
+	background: #eee;
+}
+
+body {
+	background: #ddd;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+}
+
+.section {
+	width: 50%;
+	min-height: 100vh;
+	float: left;
+}
+
+.section:first-child {
+	background: #212121;
+}
+
+.section:last-child {
+	background: #F5F5F5;
+}
+
+.content {
+	max-width: 496px;
+	width: 100%;
+}
+
+.content, #logo, #slogen {
+	margin: 3vh auto;
+}
+
+#logo {
+	max-width: 496px;
+	width: 33%;
+}
+
+#slogen {
+	max-width: 992px;
+	width: 66%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 992px) {
+	.section {
+		width: 100%;
+	}
+}
