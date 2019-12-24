@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.33333em;
+}
+
+a, a:hover, a:focus, a:visited {
+  color: #ff5252;
+}
+
+hr {
+  display: none;
+}
+
+h1, h2, h3, .type, .item > div:first-child {
+  font-weight: bold;
+}
+
+.contact, .type, .item > div:first-child {
+  margin-top: 1.77778em;
+}
+
+h1 {
+  font-size: 3.16049em;
+  line-height: 1.33333em;
+}
+
+h2 {
+  font-size: 1.77778em;
+}
+
+h3 {
+  font-size: 1.33333em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h3:before, h3:after {
+  content: '-';
+}
+
+h3:before {
+  right: 5px;
+}
+
+h3:after {
+  left: 5px;
+}
+
+.contact {
+  text-align: right;
+  font-size: 1.33333em;
+  line-height: 1.33333em;
+  font-weight: 300;
+}
+
+.contact div {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.contact div:first-child:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.contact div:last-child:hover {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.type {
+  text-transform: capitalize;
+  display: block;
+  width: 110px;
+}
+
+.location {
+  font-style: italic;
+}
+
+header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  margin-bottom: 1em;
+}
+
+header a {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.page {
+  background: #fff;
+  padding-bottom: 96px;
+}
+
+footer {
+  text-align: center;
+}
+
+svg {
+  fill: #ccc;
+  color: #ccc;
+  -webkit-transition: fill 0.3s ease-out;
+  transition: fill 0.3s ease-out;
+}
+
+svg:hover {
+  fill: #bbb;
+  color: #bbb;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    background: -webkit-linear-gradient(bottom right, #EE9CA7, #FF808E);
+    background: linear-gradient(to top left, #EE9CA7, #FF808E);
+    color: #fff;
+    -webkit-animation: hue 60s infinite linear;
+            animation: hue 60s infinite linear;
+  }
+  header a, header a:hover, header a:focus, header a:visited {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 816px) {
+  .type {
+    display: inline-block;
+  }
+  .item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .item > div:first-child {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 60%;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
+  }
+  .item .location {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .item .time {
+    text-align: right;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container {
+    margin: 0 48px;
+  }
+  .page {
+    max-width: 816px;
+    margin: 0 auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  body {
+    background: url(assets/wall.png);
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+            filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+            filter: hue-rotate(-360deg);
+  }
+}
