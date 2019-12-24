@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Available for hire. Wenchen Li, aka Neo, is a web developer currently located in Toronto.">
+	<meta name="keywords" content="Wenchen Li, Neo, Toronto, Canada, Web, Developer, Development, web developer, front end developer, html5, css3, javascript, php, mysql, nodejs, adobe">
+	<meta property="og:title" content="Wenchen Li | Web Developer in Toronto, Canada">
+	<meta property="og:description" content="Available for hire. Wenchen Li, aka Neo, is a web developer currently located in Toronto.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://wenchen.li">
+	<meta property="og:image" content="http://wenchen.li/index_assets/meta.png">
+	<meta name="twitter:title" content="Wenchen Li | Web Developer">
+	<meta name="twitter:description" content="Available for hire. Wenchen Li, aka Neo, is a web developer currently located in Toronto.">
+	<meta name="twitter:image" content="http://wenchen.li/index_assets/meta.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@neolwc">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>Wenchen Li</title>
+	<link rel="stylesheet" href="index_assets/style.css">
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="index_assets/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="index_assets/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="index_assets/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="index_assets/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="index_assets/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="index_assets/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="index_assets/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="index_assets/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="index_assets/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="index_assets/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="index_assets/favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="index_assets/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="index_assets/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="index_assets/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="index_assets/favicons/manifest.json">
+	<link rel="mask-icon" href="index_assets/favicons/safari-pinned-tab.svg" color="#ff5252">
+	<link rel="shortcut icon" href="index_assets/favicons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Wenchen Li">
+	<meta name="application-name" content="Wenchen Li">
+	<meta name="msapplication-TileColor" content="#ff5252">
+	<meta name="msapplication-TileImage" content="index_assets/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="index_assets/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ff5252">
+</head>
+
+<body>
+	<div id="container">
+		<div id="logo">
+			<img src="index_assets/logo.svg">
+		</div>
+		<div id="space"></div>
+		<div id="links">
+			<a target="_blank" title="GitHub" href="https://github.com/neo">
+				<img src="index_assets/github.png">
+			</a>
+			<a target="_blank" title="LinkedIn" href="https://linkedin.com/in/wenchen-li">
+				<img src="index_assets/in.png">
+			</a>
+			<a target="_blank" title="Twitter" href="https://twitter.com/neolwc">
+				<img src="index_assets/twitter.png">
+			</a>
+		</div>
+	</div>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-58523664-6', 'auto'); ga('send', 'pageview');
+		var a = document.querySelectorAll('a');
+		for (var i = a.length - 1; i >= 0; i--) {
+			a[i].addEventListener('click', click);
+		}
+		function click(e) {
+			ga('send', 'event', {
+				eventCategory: 'Outbound Link',
+				eventAction: 'click',
+				eventLabel: e.currentTarget.title
+			});
+		}
+	</script>
+</body>
+
+</html>

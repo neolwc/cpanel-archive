@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333 url(back.png);
+  overflow: hidden;
+}
+
+#container {
+  width: 80%;
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#logo {
+  -webkit-animation: fadeInDown 2s both;
+          animation: fadeInDown 2s both;
+}
+
+#space {
+  height: 12.5%;
+}
+
+#links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#links > a {
+  -webkit-animation: fadeIn 2s both;
+          animation: fadeIn 2s both;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+#links > a:nth-child(1) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+#links > a:nth-child(2) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+#links > a:nth-child(3) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+#links > a > img {
+  width: 40px;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+#links > a > img[src$='in.png'] {
+  margin-right: -3px;
+}
+#links > a:hover, #links > a:focus, #links > a:active {
+  -webkit-transform: translateY(-20%);
+      -ms-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
