@@ -26,18 +26,25 @@
 </head>
 <body>
 	<?php
-	$db = new PDO();
-	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+	// $db = new PDO();
+	// $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	// $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-	function getData($sql, $db) {
-	  $result = $db->query($sql);
-	  return $result->fetchAll(PDO::FETCH_ASSOC);
-	}
+	// function getData($sql, $db) {
+	//   $result = $db->query($sql);
+	//   return $result->fetchAll(PDO::FETCH_ASSOC);
+	// }
 
-	$sql = "SELECT `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` FROM `colors` WHERE `id` <= 16";
-	$colors = getData($sql, $db);
+	// $sql = "SELECT `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` FROM `colors` WHERE `id` <= 16";
+	// $colors = getData($sql, $db);
 	// var_dump($colors);
+
+	require_once('./colors.php');
+	foreach($colors as $row => $value) {
+		$colors[$row] = array_filter($value, function($key) {
+			return in_array($key, array('100', '200', '300', '400', '500', '600', '700', '800', '900'));
+		}, ARRAY_FILTER_USE_KEY);
+	}
 
 	foreach ($colors as $color) {
 		echo '<div class="row">'."\n";
