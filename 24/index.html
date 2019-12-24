@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>24</title>
+</head>
+<body>
+	<form>
+		<select id="a">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+		</select>
+		<select id="b">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+		</select>
+		<select id="c">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+		</select>
+		<select id="d">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+		</select>
+		<input type="button" value="GO"></input>
+	</form>
+	<div></div>
+	<script src="24.js"></script>
+	<script>
+	var selects = document.querySelectorAll('select');
+	var div = document.querySelector('div');
+	document.querySelector('input').addEventListener('click', function (e) {
+		if (e.preventDefault) e.preventDefault();
+		div.innerHTML = '';
+		var count = 0;
+		var inputs = new Array();
+		for (var i = selects.length - 1; i >= 0; i--) {
+			var obj = new Object();
+			obj.from = selects[i].value.toString();
+			obj.value = parseInt(selects[i].value);
+			inputs.unshift(obj);
+		};
+		var result = main(inputs);
+		if (result.length) {
+			result.forEach(function (str) {
+				var p = document.createElement('p');
+				p.innerHTML = str;
+				div.appendChild(p);
+			});
+		} else {
+			var p = document.createElement('p');
+			p.innerHTML = 'NONE!';
+			div.appendChild(p);
+		}
+	});
+	</script>
+</body>
+</html>
