@@ -1,4 +1,7 @@
 {
   "name": "li",
-  "trailingSlash": true
+  "trailingSlash": true,
+  "github": {
+    "silent": true
+  }
 }
