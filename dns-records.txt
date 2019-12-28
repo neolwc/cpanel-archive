@@ -1,0 +1,4 @@
+@ MX fbc2b9d6a7bceb4c8ce8b7a0f0b5c5.pamx1.hotmail.com 10
+@ TXT "v=spf1 include:hotmail.com ~all"
+default._domainkey TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuss+3oo2IXIFKMAHliDhzlP09oSTOvYuGGBsBJukWnFVhBG6cJhtkzvaQx19ApbrsEQo1reEBtb7VOKhhwpTZwQdIJFtSAcqkkHWvu8Z+dO5m+aj63Lhcq1Fcds9Dwvka0c4hq69vCwroBy6CO/MUJVXWHKx28UrLMHMgUldwJg9hNVayZF7lIFAAEHgl4xBc3GJyGoNzYoJFR4uMJADDXd6ySKHkUoJCWf1BnDJf8bQSKCLUOUZoVEioRFwuigZayIaj/+dt2t5WgBmnhxRLamax5UQuNVTF+m70WxFbYuLwVFPjOIarc2TbMfWvE6e/E+j2ybJHEUcUjVK3u6z5QIDAQAB;"
+_sipfederationtls._tcp SRV 1 2 5061 federation.messenger.msn.com
